@@ -3,27 +3,28 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Copa do Mundo</title>
+	<title>World Cup 2022</title>
+	<link rel="shortcut icon" href="img/icon/world-cup.png" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header>
 		<nav>
 			<ul class="menu-nav">
-				<li><a href="#inicio">Início</a></li>
-				<li><a href="#selecoes">Seleções</a></li>
-				<li><a href="#funcionamento">Como funciona?</a></li>
+				<li><i class="fa-solid fa-trophy-star"></i><a href="#inicio">home</a></li>
+				<li><a href="#selecoes">Teams</a></li>
+				<li><a href="#funcionamento">How it woeks?</a></li>
 			</ul>
 		</nav>
 	</header>
 
-	<h2 class="titulo-principal">Copa do Mundo 2022</h2>
+	<h2 class="titulo-principal">World Cup Qatar 2022</h2>
 	
 	<section id="inicio" class="inicio">
 		
 
 		<div class="bloco-texto">
-			<h2 class="titulo-secao">Sede da Copa em 2022</h2>
+			<h2 class="titulo-secao">Host Country</h2>
 
 			<p>O processo de escolha do país que será a sede da próxima copa do mundo é exaustivo. Onde primeiramente são convocados os países candidatos para a realização do evento, depois disso diversos aspectos são debatidos para a seleção. Após isso a escolha definitiva é feita pelo Comitê Executivo da FIFA, o qual decide o país sede cerca de 7 anos antes da realização do campeonato.
 			<br>
@@ -37,48 +38,49 @@
 
 	<section id="selecoes" class="selecoes">
 
-		<h2 class="titulo-secao" style="color: #FFF; text-align: center;">Seleções</h2>
+		<h2 class="titulo-secao" style="color: #FFF; text-align: center;">Teams</h2>
 
-		<select class="lista-grupos">
-			<option value="grupo-a">Grupo A</option>
-			<option value="grupo-a">Grupo B</option>
-			<option value="grupo-a">Grupo C</option>
-			<option value="grupo-a">Grupo D</option>
-			<option value="grupo-a">Grupo E</option>
-			<option value="grupo-a">Grupo F</option>
-			<option value="grupo-a">Grupo G</option>
-			<option value="grupo-a">Grupo H</option>
-
+		<select id="lista-grupos" class="lista-grupos">
+			<option value="groupA">Group A</option>
+			<option value="groupB">Group B</option>
+			<option value="groupC">Group C</option>
+			<option value="groupD">Group D</option>
+			<option value="groupE">Group E</option>
+			<option value="groupF">Group F</option>
+			<option value="groupG">Group G</option>
+			<option value="groupH">Group H</option>
 		</select>
 		
-			<div class="area-times-cards">
+			<div class="area-times-cards" id="area-times">
 
+				
 				<div class="time">
-					<img src="img/flags/255px-netherlands.png">
-					<p class="nome-pais">Países Baixos</p>
+					<img id="selecao1-img" src="img/flags/netherlands.png">
+					<p id="selecao1-p" class="nome-pais">Netherlands</p>
 				</div>
 
-				<div class="time">
-					<img src="img/flags/255px-senegal.png">
+				<div class="time" id="selecao2">
+					<img src="img/flags/senegal.png">
 					<p>Senegal</p>
 				</div>
 
-				<div class="time">
-					<img src="img/flags/255px-ecuador.webp">
-					<p>Equador</p>
+				<div class="time" id="selecao3">
+					<img src="img/flags/ecuador.webp">
+					<p>Ecuador</p>
 				</div>
 
-				<div class="time">
-					<img width="255" height="170" src="img/flags/255px-qatar.png">
+				<div class="time" id="selecao4">
+					<img width="255" height="170" src="img/flags/qatar.png">
 					<p>Qtar</p>
 				</div>
+				
 
 			</div>
 
 	</section>
 
 	<section id="funcionamento">
-		<h2 class="titulo-secao">Como funciona?</h2>
+		<h2 class="titulo-secao">How it works?</h2>
 
 
 		<div class="times-group">
@@ -154,6 +156,8 @@
 			</article>
 		</div>
 	</section>
+
+	<script src="js/alteracao-selecoes.js"></script>
 
 </body>
 </html>

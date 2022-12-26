@@ -28,7 +28,7 @@ header nav ul.menu-nav{
 }
 
 header nav ul.menu-nav li{
-	margin: 0 22px;*/
+	margin: 0 22px;
 	font-size: 22px;
 	display: inline-block;
 	
@@ -111,6 +111,10 @@ div.area-times-cards{
 	right: 0;
 }
 
+.lista-grupos:active{
+	border: none;
+}
+
 div.times-group{
 	display: flex;
 	flex-wrap: wrap;
@@ -126,6 +130,8 @@ article.funcionamento-etapas{
 	border-top: solid 6px var(--rose);
 	box-shadow: 0px 30px 40px -20px var(--grayishBlue);
 	border-radius: 6px;
+	box-sizing: border-box;
+	transition: .5s all;
 
 }
 
@@ -141,6 +147,13 @@ article.funcionamento-etapas .conteudo-texto{
 	font-size: 20px;
 	
 }
+
+article.funcionamento-etapas:hover{
+	transform: scale(1.2);
+	font-weight: 500;
+	
+}
+
 
 ul.lista-pontuacao{
 	list-style: none;
