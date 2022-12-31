@@ -270,8 +270,8 @@ listaGrupos.addEventListener("change",
 
             areaTimes.innerHTML += 
             `
-            <div class="time">
-					<img id="selecao1-img" src="img/flags/${groupSelected[i].flag}" width="255" height="170">
+            <div class="team">
+					<img id="selecao1-img" src="img/flags/${groupSelected[i].flag}">
 					<p id="selecao1-p" class="nome-pais">${groupSelected[i].name}</p>
 			</div>
 

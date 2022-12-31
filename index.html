@@ -6,156 +6,156 @@
 	<title>World Cup 2022</title>
 	<link rel="shortcut icon" href="img/icon/world-cup.png" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/media-query.css">
 </head>
 <body>
 	<header>
-		<nav>
-			<ul class="menu-nav">
+		<nav class="menu-nav">
+			<h1>World Cup Qatar 2022</h1>
+
+			<ul class="lista-nav">
 				<li><i class="fa-solid fa-trophy-star"></i><a href="#inicio">home</a></li>
 				<li><a href="#selecoes">Teams</a></li>
-				<li><a href="#funcionamento">How it woeks?</a></li>
+				<li><a href="#funcionamento">How it works?</a></li>
 			</ul>
 		</nav>
 	</header>
 
-	<h2 class="titulo-principal">World Cup Qatar 2022</h2>
-	
-	<section id="inicio" class="inicio">
-		
+	<main>
+		<section id="inicio" class="host-country">
+			
 
-		<div class="bloco-texto">
-			<h2 class="titulo-secao">Host Country</h2>
+			<div class="text-block">
+				<h2 class="section-title">Host Country</h2>
 
-			<p>O processo de escolha do país que será a sede da próxima copa do mundo é exaustivo. Onde primeiramente são convocados os países candidatos para a realização do evento, depois disso diversos aspectos são debatidos para a seleção. Após isso a escolha definitiva é feita pelo Comitê Executivo da FIFA, o qual decide o país sede cerca de 7 anos antes da realização do campeonato.
-			<br>
-			<br>
-			Em 2010 houve uma excessão, onde o Comitê Executivo definiu a Rússia para sediar a copa em 2018 e no mesmo ano escolheu o Catar como o país para ser o país sede do evento no ano de 2022. A copa do mundo marca a volta da disputa no continente Asiático e pela primeira vez ocorrendo em um país situado no Oriente Médio.
-			</p>		
-		</div>
-
-		<img class="img-inicio" src="img/catar-1.jpeg">
-	</section>
-
-	<section id="selecoes" class="selecoes">
-
-		<h2 class="titulo-secao" style="color: #FFF; text-align: center;">Teams</h2>
-
-		<select id="lista-grupos" class="lista-grupos">
-			<option value="groupA">Group A</option>
-			<option value="groupB">Group B</option>
-			<option value="groupC">Group C</option>
-			<option value="groupD">Group D</option>
-			<option value="groupE">Group E</option>
-			<option value="groupF">Group F</option>
-			<option value="groupG">Group G</option>
-			<option value="groupH">Group H</option>
-		</select>
-		
-			<div class="area-times-cards" id="area-times">
-
-				
-				<div class="time">
-					<img id="selecao1-img" src="img/flags/netherlands.png">
-					<p id="selecao1-p" class="nome-pais">Netherlands</p>
-				</div>
-
-				<div class="time" id="selecao2">
-					<img src="img/flags/senegal.png">
-					<p>Senegal</p>
-				</div>
-
-				<div class="time" id="selecao3">
-					<img src="img/flags/ecuador.webp">
-					<p>Ecuador</p>
-				</div>
-
-				<div class="time" id="selecao4">
-					<img width="255" height="170" src="img/flags/qatar.png">
-					<p>Qtar</p>
-				</div>
-				
-
+				<p>O processo de escolha do país que será a sede da próxima copa do mundo é exaustivo. Onde primeiramente são convocados os países candidatos para a realização do evento, depois disso diversos aspectos são debatidos para a seleção. Após isso a escolha definitiva é feita pelo Comitê Executivo da FIFA, o qual decide o país sede cerca de 7 anos antes da realização do campeonato.
+				<br>
+				<br>
+				Em 2010 houve uma excessão, onde o Comitê Executivo definiu a Rússia para sediar a copa em 2018 e no mesmo ano escolheu o Catar como o país para ser o país sede do evento no ano de 2022. A copa do mundo marca a volta da disputa no continente Asiático e pela primeira vez ocorrendo em um país situado no Oriente Médio.
+				</p>		
 			</div>
 
-	</section>
+			<img class="img-inicio" src="img/catar-1.jpeg">
+		</section>
 
-	<section id="funcionamento">
-		<h2 class="titulo-secao">How it works?</h2>
+		<section id="selecoes" class="teams">
 
+			<h2 class="section-title" style="color: #FFF; text-align: center;">Teams</h2>
 
-		<div class="times-group">
-
-			<article class="funcionamento-etapas">
-				<h3>Fase de times</h3>
-
-				<hr>
-				
-				<div class="conteudo-texto">
-					<p>Os 32 times classificados são divididos em 8 grupos nomeados de A a H, com 4 times em cada. Em um grupo todas as seleções se enfrentam em busca de um maior número de pontos.</p> 
+				<select id="lista-grupos" class="groups-list">
+					<option value="groupA">Group A</option>
+					<option value="groupB">Group B</option>
+					<option value="groupC">Group C</option>
+					<option value="groupD">Group D</option>
+					<option value="groupE">Group E</option>
+					<option value="groupF">Group F</option>
+					<option value="groupG">Group G</option>
+					<option value="groupH">Group H</option>
+				</select>
+				<div class="area-team-cards" id="area-times">
 					
-					<ul class="lista-pontuacao">
-						<li style="color: green;">1 Vitória resulta em 3 pontos a equipe vencedora</li>
-						<li style="color: red;">1 empate resulta em 1 ponto para cada equipe</li>
-						<li style="color: gray;">A derrota não resulta em nenhum pontuação</li>
-					</ul>
+					<div class="team">
+						<img class="team-img" id="selecao1-img" src="img/flags/netherlands.png">
+						<p class="team-p" id="selecao1-p" class="nome-pais">Netherlands</p>
+					</div>
+
+					<div class="team" id="selecao2">
+						<img class="team-img" src="img/flags/senegal.png">
+						<p>Senegal</p>
+					</div>
+
+					<div class="team" id="selecao3">
+						<img class="team-img" src="img/flags/ecuador.webp">
+						<p>Ecuador</p>
+					</div>
+
+					<div class="team" id="selecao4">
+						<img class="team-img" src="img/flags/qatar.png">
+						<p>Qtar</p>
+					</div>
 					
-				</div>
-				
-			</article>
-
-			<article class="funcionamento-etapas">
-				<h3>Oitavas de final</h3>
-
-				<hr>
-				
-				<div class="conteudo-texto">
-					<p>Nessa etapa os dois times com as maiores pontuações avançam e jogam as disputas de mata-mata. Nesses jogos o primeiro classificado de um grupo joga com o segundo classificado do grupo seguinte, a seleção perder a partida é eliminada da copa e a outra segue classificada para as quartas de final.</p>
-				</div>
-
-			</article>
-
-			<article class="funcionamento-etapas">
-				<h3>Quartas de final</h3>
-
-				<hr>
-				
-				<div class="conteudo-texto">
-					<p>Nesse ponto os 8 times classificados se enfrentam uma única vez. O vencedor avança para a semifinal, enquanto que o perdedor é eliminado dos jogos, assim como nas oitavas de final.</p>
-				</div>
-			</article>
-
-			<article class="funcionamento-etapas">
-				<h3>Semifinal</h3>
-
-				<hr>
-				
-				<div class="conteudo-texto">
-					<p>Nas semifinais, o sistema de escolha é simples, são 4 equipes ao total que jogam 2 jogos. O vencedor de cada jogo é classificado para disputar a taça de campeão do mundo.</p>
-				</div>
-			</article>
-
-			<article class="funcionamento-etapas">
-				<h3>Escolha pelo terceiro lugar</h3>
-
-				<hr>
-				
-				<div class="conteudo-texto">
-					<p>Após os jogos das semifinais, os perdedores jogam uma última vez para definirem qual será o terceiro colocado na disputa.</p>
 
 				</div>
-			</article>
 
-			<article class="funcionamento-etapas">
-				<h3>Final</h3>
+		</section>
 
-				<hr>
-				
-				<div class="conteudo-texto">
-					<p>Na final, os dois times vencedores das semifinais se confrontam em um sistema de jogo padrão, com dois tempos de 90 minutos. Caso haja empate são adicionados ao relógio mais 2 tempos de 15 minutos, resultando em 30 minutos de prorrogação. Caso a disputa se mantenha empatada, os times se enfrentam em uma disputa de pênaltis, com 5 chutes para cada equipe. </p>
-				</div>
-			</article>
-		</div>
-	</section>
+		<section id="funcionamento" class="how-works">
+			
+			<h2 class="section-title">How it works?</h2>
+		
+			<div class="etapas">
+
+				<article class="card-etapas">
+					<h3>Fase de times</h3>
+
+					<hr>
+					
+					<div class="conteudo-texto">
+						<p>Os 32 times classificados são divididos em 8 grupos nomeados de A a H, com 4 times em cada. Em um grupo todas as seleções se enfrentam em busca de um maior número de pontos.</p> 
+						
+						<ul class="lista-pontuacao">
+							<li style="color: green;">Vitória: +3 pontos a equipe vencedora</li>
+							<li style="color: red;">Empate: +1 ponto para cada equipe</li>
+							<li style="color: gray;">Derrota: sem pontuação para ambos</li>
+						</ul>
+						
+					</div>
+					
+				</article>
+
+				<article class="card-etapas">
+					<h3>Oitavas de final</h3>
+
+					<hr>
+					
+					<div class="conteudo-texto">
+						<p>Nessa etapa os dois times com as maiores pontuações avançam e jogam as disputas de mata-mata. Nesses jogos o primeiro classificado de um grupo joga com o segundo classificado do grupo seguinte, a seleção perder a partida é eliminada da copa e a outra segue classificada para as quartas de final.</p>
+					</div>
+
+				</article>
+
+				<article class="card-etapas">
+					<h3>Quartas de final</h3>
+
+					<hr>
+					
+					<div class="conteudo-texto">
+						<p>Nesse ponto os 8 times classificados se enfrentam uma única vez. O vencedor avança para a semifinal, enquanto que o perdedor é eliminado dos jogos, assim como nas oitavas de final.</p>
+					</div>
+				</article>
+
+				<article class="card-etapas">
+					<h3>Semifinal</h3>
+
+					<hr>
+					
+					<div class="conteudo-texto">
+						<p>Nas semifinais, o sistema de escolha é simples, são 4 equipes ao total que jogam 2 jogos. O vencedor de cada jogo é classificado para disputar a taça de campeão do mundo.</p>
+					</div>
+				</article>
+
+				<article class="card-etapas">
+					<h3>Escolha pelo terceiro lugar</h3>
+
+					<hr>
+					
+					<div class="conteudo-texto">
+						<p>Após os jogos das semifinais, os perdedores jogam uma última vez para definirem qual será o terceiro colocado na disputa.</p>
+
+					</div>
+				</article>
+
+				<article class="card-etapas">
+					<h3>Final</h3>
+					<hr>
+					<div class="conteudo-texto">
+						<p>Na final, os dois times vencedores das semifinais se confrontam em um sistema de jogo padrão, com dois tempos de 90 minutos. Caso haja empate são adicionados ao relógio mais 2 tempos de 15 minutos, resultando em 30 minutos de prorrogação. Caso a disputa se mantenha empatada, os times se enfrentam em uma disputa de pênaltis, com 5 chutes para cada equipe. </p>
+					</div>
+				</article>
+			</div>
+			
+		</section>
+	</main>
 
 	<script src="js/alteracao-selecoes.js"></script>
 
