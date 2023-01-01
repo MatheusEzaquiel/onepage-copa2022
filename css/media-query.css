@@ -1,4 +1,4 @@
-/*435px -  599pz*/
+/*435px -  599px*/
 @media screen and (max-width: 599px) {
 
     /* Navbar */
@@ -32,9 +32,6 @@
 
 
 @media screen and (min-width: 802) and (max-width: 1200px){
-    body{
-        background: blue;
-    }
     
     /* Section 1 - Host Country */
     .content-host-country{
@@ -82,10 +79,6 @@
 }
 
 @media screen and (min-width: 1201px){
-
-    body{
-        background: gray;
-    }
     /* Section 1 - Host Country */
 
     /* NavBar */
